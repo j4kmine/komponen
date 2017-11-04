@@ -1,0 +1,31 @@
+<ion-view title="List Advance">
+	<ion-content>
+		<ion-list show-delete = "showDelete2">
+ <ion-item>
+ <ion-delete-button class = "ion-minus-circled"></ion-delete-button>
+ Item 1
+ </ion-item>
+ <ion-item>
+ <ion-delete-button class = "ion-minus-circled"></ion-delete-button>
+ Item 2
+ </ion-item>
+</ion-list>
+<ion-toggle ng-model = "showDelete2">
+ Show Delete 1
+</ion-toggle>
+<ion-list show-reorder = "true">
+ <ion-item ng-repeat = "item in items">
+ Item {{item.id}}
+ <ion-reorder-button class = "ion-navicon" on-reorder = "moveItem(item,
+$fromIndex, $toIndex)"></ion-reorder-button>
+ </ion-item>
+</ion-list>
+<ion-list>
+ <ion-item>
+ Item with two buttons...
+ <ion-option-button class = "button-positive">Button 1</ion-optionbutton>
+ <ion-option-button class = "button-assertive">Button 2</ion-optionbutton>
+ </ion-item>
+</ion-list>
+	</ion-content>
+</ion-view>
