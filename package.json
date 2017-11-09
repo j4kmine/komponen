@@ -9,14 +9,15 @@
     "gulp-sass": "^3.1.0"
   },
   "dependencies": {
+    "cordova-android": "~6.3.0",
     "cordova-plugin-admobpro": "^2.29.26",
+    "cordova-plugin-camera": "git+https://github.com/apache/cordova-plugin-camera.git",
     "cordova-plugin-device": "^1.1.4",
     "cordova-plugin-extension": "^1.5.2",
     "cordova-plugin-splashscreen": "^4.0.3",
     "cordova-plugin-statusbar": "^2.2.1",
     "cordova-plugin-whitelist": "^1.3.1",
-    "ionic-plugin-keyboard": "^2.2.1",
-    "cordova-android": "~6.3.0"
+    "ionic-plugin-keyboard": "^2.2.1"
   },
   "cordova": {
     "plugins": {
@@ -25,7 +26,8 @@
       "cordova-plugin-whitelist": {},
       "cordova-plugin-statusbar": {},
       "cordova-plugin-device": {},
-      "cordova-plugin-splashscreen": {}
+      "cordova-plugin-splashscreen": {},
+      "cordova-plugin-camera": {}
     },
     "platforms": [
       "android"
